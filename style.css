@@ -49,8 +49,8 @@ main {
     width: 100%;
     display: grid;
     place-items: center;
-    padding-top: 50px;
-    height: 100%;
+    padding: 90px 50px;
+    /*height: 100%;*/
 }
 
 .main {
@@ -58,12 +58,12 @@ main {
     border-radius: 30px;
     width: 62%;
     height: 100%;
-    margin-bottom: 20px;
+    /*margin-bottom: 50px;*/
 }
 
 
 .faqs {
-    padding: 5rem 5rem 1rem 2rem;
+    padding: 5rem 5rem 3rem 2rem;
     width: 50%;
     float: right;
     height: 100%;
@@ -74,14 +74,14 @@ main {
     position: relative;
     height: inherit;
     float: left;
-    background: url('../faq-accordion-card-main/images/illustration-woman-online-desktop.svg') bottom 160px left -80px no-repeat,
-    url('../faq-accordion-card-main/images/bg-pattern-desktop.svg') bottom -50px left -570px no-repeat;
+    background: url('../faq-accordion-card-main/images/illustration-woman-online-desktop.svg') bottom 150px left -74px no-repeat,
+    url('../faq-accordion-card-main/images/bg-pattern-desktop.svg') bottom -65px left -570px no-repeat;
 }
 
 .image::before {
     content: "";
     position: absolute;
-    bottom: 230px;
+    bottom: 213px;
     left: -90px;
     background: url(../faq-accordion-card-main/images/illustration-box-desktop.svg) no-repeat;
     width: 191px;
