@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*
+GENERAL STYLES
+*/
+
+:root {
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+}
+
+/*
+RESET STYLES
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/*.test {*/
+/*    height: 9000px;*/
+/*    background-color: red;*/
+/*    width: 80%;*/
+/*}*/
+
+
+main {
+    background-image: linear-gradient(
+            to bottom right,
+            hsl(273, 75%, 66%),
+            hsl(240, 73%, 65%)
+    );
+    background-repeat: no-repeat;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.main {
+    background-color: white;
+    border-radius: 30px;
+    width: 62%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.faqs {
+    padding: 5rem 5rem 1rem 2rem;
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.image {
+    width: 50%;
+    position: relative;
+    height: inherit;
+    float: left;
+    background: url('../faq-accordion-card-main/images/illustration-woman-online-desktop.svg') bottom 160px left -80px no-repeat,
+    url('../faq-accordion-card-main/images/bg-pattern-desktop.svg') bottom -50px left -570px no-repeat;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    bottom: 230px;
+    left: -90px;
+    background: url(../faq-accordion-card-main/images/illustration-box-desktop.svg) no-repeat;
+    width: 191px;
+    height: 156px;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 0.3s ease-in-out;
+    color: hsl(14, 88%, 65%);
+}
+
+.answer {
+    padding-top: 1rem;
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+    transition: all 0.3s ease-in-out;
+}
+
+.faq {
+    border-bottom: 1px solid var(--Light-grayish-blue);
+}
+
+
+.faqs h1 {
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.faq-item.active .answer {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.faq-item.active .question {
+    color: black;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-item button {
+    outline: none;
+}
+
+
+/*.image img {*/
+/*    max-width: 110%;*/
+/*}*/
+
+.question {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--Dark-grayish-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
