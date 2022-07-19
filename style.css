@@ -74,8 +74,8 @@ main {
     position: relative;
     height: inherit;
     float: left;
-    background: url('../faq-accordion-card-main/images/illustration-woman-online-desktop.svg') bottom 150px left -74px no-repeat,
-    url('../faq-accordion-card-main/images/bg-pattern-desktop.svg') bottom -65px left -570px no-repeat;
+    background: url('images/illustration-woman-online-desktop.svg') bottom 150px left -74px no-repeat,
+    url('images/bg-pattern-desktop.svg') bottom -65px left -570px no-repeat;
 }
 
 .image::before {
@@ -83,7 +83,7 @@ main {
     position: absolute;
     bottom: 213px;
     left: -90px;
-    background: url(../faq-accordion-card-main/images/illustration-box-desktop.svg) no-repeat;
+    background: url('images/illustration-box-desktop.svg') no-repeat;
     width: 191px;
     height: 156px;
 }
