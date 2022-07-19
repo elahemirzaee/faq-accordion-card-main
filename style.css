@@ -49,7 +49,7 @@ main {
     width: 100%;
     display: grid;
     place-items: center;
-    padding: 90px 50px;
+    padding: 110px 50px;
     /*height: 100%;*/
 }
 
@@ -63,7 +63,7 @@ main {
 
 
 .faqs {
-    padding: 5rem 5rem 3rem 2rem;
+    padding: 2.5rem 5rem 3rem 2rem;
     width: 50%;
     float: right;
     height: 100%;
@@ -74,14 +74,14 @@ main {
     position: relative;
     height: inherit;
     float: left;
-    background: url('images/illustration-woman-online-desktop.svg') bottom 150px left -74px no-repeat,
-    url('images/bg-pattern-desktop.svg') bottom -65px left -570px no-repeat;
+    background: url('images/illustration-woman-online-desktop.svg') bottom 112px left -74px no-repeat,
+    url('images/bg-pattern-desktop.svg') bottom -112px left -570px no-repeat;
 }
 
 .image::before {
     content: "";
     position: absolute;
-    bottom: 213px;
+    bottom: 175px;
     left: -90px;
     background: url('images/illustration-box-desktop.svg') no-repeat;
     width: 191px;
