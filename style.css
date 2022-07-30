@@ -24,13 +24,13 @@ RESET STYLES
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-html {
-    height: 100%;
-}
+/*html {*/
+/*    height: 100%;*/
+/*}*/
 
-body {
-    height: 100%;
-}
+/*body {*/
+/*    height: 100%;*/
+/*}*/
 
 /*.test {*/
 /*    height: 9000px;*/
@@ -49,21 +49,27 @@ main {
     width: 100%;
     display: grid;
     place-items: center;
-    padding: 110px 50px;
+    /*padding: 140px 50px;*/
+
+    min-height: 100vh;
+    align-content: center;
+    padding: 2rem;
     /*height: 100%;*/
 }
 
 .main {
     background-color: white;
     border-radius: 30px;
-    width: 62%;
+    /*width: 62%;*/
     height: 100%;
+    width: min(100%, 50rem);
     /*margin-bottom: 50px;*/
 }
 
 
 .faqs {
-    padding: 2.5rem 5rem 3rem 2rem;
+    /*padding: 2.5rem 5rem 3rem 2rem;*/
+    padding: 2rem;
     width: 50%;
     float: right;
     height: 100%;
@@ -74,14 +80,14 @@ main {
     position: relative;
     height: inherit;
     float: left;
-    background: url('images/illustration-woman-online-desktop.svg') bottom 112px left -74px no-repeat,
-    url('images/bg-pattern-desktop.svg') bottom -112px left -570px no-repeat;
+    background: url('images/illustration-woman-online-desktop.svg') bottom 68px left -74px no-repeat,
+    url('images/bg-pattern-desktop.svg') bottom -159px left -570px no-repeat;
 }
 
 .image::before {
     content: "";
     position: absolute;
-    bottom: 175px;
+    bottom: 134px;
     left: -90px;
     background: url('images/illustration-box-desktop.svg') no-repeat;
     width: 191px;
@@ -112,7 +118,14 @@ button:hover {
 }
 
 .arrow {
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out;*/
+    transition: transform 0.3s ease-in-out;
+    align-self: center;
+    object-fit: contain;
+    width: 0.75rem;
+    margin-left: 0.75rem;
+    user-select: none;
+    pointer-events: none;
 }
 
 .faq {
@@ -165,4 +178,14 @@ button:hover {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 50rem) {
+    .image {
+        display: none;
+    }
+
+    .faqs {
+        width: 100%;
+    }
 }
